@@ -12,6 +12,7 @@
 		3F6B9071212558860012DAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B906F212558860012DAC0 /* Main.storyboard */; };
 		3F6B9073212558870012DAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B9072212558870012DAC0 /* Assets.xcassets */; };
 		3F6B9076212558870012DAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B9074212558870012DAC0 /* LaunchScreen.storyboard */; };
+		3F833F14212B3A5200E1C727 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F833F13212B3A5200E1C727 /* MenuBar.swift */; };
 		3FBC713A2126EFA4007C9CFF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC71392126EFA4007C9CFF /* VideoCell.swift */; };
 		3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC713C2126EFFE007C9CFF /* HomeController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		3F6B9072212558870012DAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F6B9075212558870012DAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F6B9077212558870012DAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F833F13212B3A5200E1C727 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		3FBC71392126EFA4007C9CFF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		3FBC713C2126EFFE007C9CFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +52,7 @@
 		3F3FE6DF2126EF1800E1FC28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F833F13212B3A5200E1C727 /* MenuBar.swift */,
 				3FBC71392126EFA4007C9CFF /* VideoCell.swift */,
 			);
 			path = View;
@@ -169,6 +172,7 @@
 				3F3FE6DE2126EA4D00E1FC28 /* Extensions.swift in Sources */,
 				3F6B906C212558860012DAC0 /* AppDelegate.swift in Sources */,
 				3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */,
+				3F833F14212B3A5200E1C727 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
