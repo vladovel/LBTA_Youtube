@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "taylor_swift_blank_space.png",
+      "filename" : "taylor_swift_bad_blood.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "taylor_swift_blank_space-1.png",
+      "filename" : "taylor_swift_bad_blood-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "taylor_swift_blank_space-2.png",
+      "filename" : "taylor_swift_bad_blood-2.png",
       "scale" : "3x"
     }
   ],

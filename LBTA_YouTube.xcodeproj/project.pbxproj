@@ -13,6 +13,7 @@
 		3F6B9073212558870012DAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B9072212558870012DAC0 /* Assets.xcassets */; };
 		3F6B9076212558870012DAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6B9074212558870012DAC0 /* LaunchScreen.storyboard */; };
 		3F833F14212B3A5200E1C727 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F833F13212B3A5200E1C727 /* MenuBar.swift */; };
+		3F833F17212C8A0F00E1C727 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F833F16212C8A0F00E1C727 /* Video.swift */; };
 		3FBC713A2126EFA4007C9CFF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC71392126EFA4007C9CFF /* VideoCell.swift */; };
 		3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC713C2126EFFE007C9CFF /* HomeController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		3F6B9075212558870012DAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F6B9077212558870012DAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F833F13212B3A5200E1C727 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		3F833F16212C8A0F00E1C727 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		3FBC71392126EFA4007C9CFF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		3FBC713C2126EFFE007C9CFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,9 +79,10 @@
 		3F6B906A212558860012DAC0 /* LBTA_YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				3F833F15212C89FB00E1C727 /* Model */,
+				3F3FE6DF2126EF1800E1FC28 /* View */,
 				3FBC713B2126EFDD007C9CFF /* Controller */,
 				3F3FE6DC2126EA3200E1FC28 /* Helpers */,
-				3F3FE6DF2126EF1800E1FC28 /* View */,
 				3F6B906B212558860012DAC0 /* AppDelegate.swift */,
 				3F6B906F212558860012DAC0 /* Main.storyboard */,
 				3F6B9072212558870012DAC0 /* Assets.xcassets */,
@@ -87,6 +90,14 @@
 				3F6B9077212558870012DAC0 /* Info.plist */,
 			);
 			path = LBTA_YouTube;
+			sourceTree = "<group>";
+		};
+		3F833F15212C89FB00E1C727 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F833F16212C8A0F00E1C727 /* Video.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3FBC713B2126EFDD007C9CFF /* Controller */ = {
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBC713A2126EFA4007C9CFF /* VideoCell.swift in Sources */,
+				3F833F17212C8A0F00E1C727 /* Video.swift in Sources */,
 				3F3FE6DE2126EA4D00E1FC28 /* Extensions.swift in Sources */,
 				3F6B906C212558860012DAC0 /* AppDelegate.swift in Sources */,
 				3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */,
