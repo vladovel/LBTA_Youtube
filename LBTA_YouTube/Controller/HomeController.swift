@@ -57,13 +57,15 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
                     channel.profileImageName = channelDictionary["profile_image_name"] as? String
                     video.channel = channel
                     
-                    print(video.thumbnailImageName)
-                    print(video.channel?.profileImageName)
+                    //print(video.thumbnailImageName)
+                    //print(video.channel?.profileImageName)
                     
                     self.videos?.append(video)
                 }
                 
-                self.collectionView.reloadData()
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
                 
             } catch let jsonError {
                 print(jsonError)
