@@ -10,24 +10,24 @@ import UIKit
 
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-//    var videos: [Video] = {
-//        var kanyeChannel = Channel()
-//        kanyeChannel.channelName = "KanyeIsTheBestChannel"
-//        kanyeChannel.profileImageName = "kanye_profile"
-//
-//        var blankSpaceVideo = Video()
-//        blankSpaceVideo.title = "Taylor Swift - Blank Space"
-//        blankSpaceVideo.thumbnailImageName = "taylor_swift_blank_space"
-//        blankSpaceVideo.channel = kanyeChannel
-//        blankSpaceVideo.numberOfViews = 219324084
-//
-//        var badBloodVideo = Video()
-//        badBloodVideo.title = "Taylor Swift - Bad Blood featuring Kanye West"
-//        badBloodVideo.thumbnailImageName = "taylor_swift_bad_blood"
-//        badBloodVideo.channel = kanyeChannel
-//        badBloodVideo.numberOfViews = 1342332334234
-//        return [blankSpaceVideo, badBloodVideo]
-//    }()
+    //    var videos: [Video] = {
+    //        var kanyeChannel = Channel()
+    //        kanyeChannel.channelName = "KanyeIsTheBestChannel"
+    //        kanyeChannel.profileImageName = "kanye_profile"
+    //
+    //        var blankSpaceVideo = Video()
+    //        blankSpaceVideo.title = "Taylor Swift - Blank Space"
+    //        blankSpaceVideo.thumbnailImageName = "taylor_swift_blank_space"
+    //        blankSpaceVideo.channel = kanyeChannel
+    //        blankSpaceVideo.numberOfViews = 219324084
+    //
+    //        var badBloodVideo = Video()
+    //        badBloodVideo.title = "Taylor Swift - Bad Blood featuring Kanye West"
+    //        badBloodVideo.thumbnailImageName = "taylor_swift_bad_blood"
+    //        badBloodVideo.channel = kanyeChannel
+    //        badBloodVideo.numberOfViews = 1342332334234
+    //        return [blankSpaceVideo, badBloodVideo]
+    //    }()
     
     var videos: [Video]?
     
@@ -72,7 +72,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
             }
             
             
-
+            
             }.resume()
     }
     
@@ -122,9 +122,12 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     @objc func handleSearch() {
         print("search")
     }
+
+    let settingsLauncher = SettingsLauncher()
     
     @objc func handleMore() {
         print("more")
+        settingsLauncher.showSettings()
     }
 
     
@@ -135,10 +138,10 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! VIdeoCell
-//        let video = videos[indexPath.item]
-//        cell.thumbnailImageView.image = UIImage(named: video.thumbnailImageName!)
-//        cell.titleLabel.text = video.title
-
+        //        let video = videos[indexPath.item]
+        //        cell.thumbnailImageView.image = UIImage(named: video.thumbnailImageName!)
+        //        cell.titleLabel.text = video.title
+        
         cell.video = videos?[indexPath.item]
         return cell
     }
