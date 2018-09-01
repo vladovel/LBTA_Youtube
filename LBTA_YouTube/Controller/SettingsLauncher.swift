@@ -30,6 +30,8 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
         Setting(imageName: "cancel", labelName: "Cancel")
     ]
     
+    var homeController: HomeController?
+    
     @objc func showSettings() {
         print("more")
         
@@ -56,14 +58,17 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
         
     }
     
-    @objc func handleTap() {
-        UIView.animate(withDuration: 0.5) {
-        }
+    @objc func handleTap(setting: Setting) {
         
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                self.blackBackground.alpha = 0
-                    self.collectionView.frame = CGRect(x: 0, y: self.collectionView.frame.height, width: self.collectionView.frame.width, height: self.collectionView.frame.height)
-        }, completion: nil)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.blackBackground.alpha = 0
+            self.collectionView.frame = CGRect(x: 0, y: self.collectionView.frame.height, width: self.collectionView.frame.width, height: self.collectionView.frame.height)
+        }, completion: {
+            (completed: Bool) in
+            if setting.labelName != "" && setting.labelName != "Cancel" {
+                self.homeController?.showControllerForSetting(setting: setting)
+            }
+        })
 
     }
 
@@ -88,6 +93,22 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let setting = settings[indexPath.item]
+//        let  settingAlert = SettingAlert()
+//        handleTap()
+//        settingAlert.showAlert(with: setting.labelName)
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let setting = self.settings[indexPath.item]
+
+        handleTap(setting: setting)
+        
+    }
+    
     override init() {
         super.init()
         
