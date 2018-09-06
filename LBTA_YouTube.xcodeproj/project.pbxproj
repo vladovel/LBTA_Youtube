@@ -38,6 +38,7 @@
 		3FBB2544213857C700529DE0 /* SetttingAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingAlert.swift; sourceTree = "<group>"; };
 		3FBC71392126EFA4007C9CFF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		3FBC713C2126EFFE007C9CFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3FEC8B4D214123E70035D2D8 /* MyPlayground - test enum initial values.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground - test enum initial values.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		3F6B905F212558860012DAC0 = {
 			isa = PBXGroup;
 			children = (
+				3FEC8B4D214123E70035D2D8 /* MyPlayground - test enum initial values.playground */,
 				3F6B906A212558860012DAC0 /* LBTA_YouTube */,
 				3F6B9069212558860012DAC0 /* Products */,
 			);

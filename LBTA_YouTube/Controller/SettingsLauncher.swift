@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum SettingName: String {
+    case Cancel = "Cancel"
+    case Settings = "Settings"
+    case Privacy = "Term & Privacy Policy"
+    case Feedback = "Send Feedback"
+    case SwitchAccount = "Switch Account"
+    case Help = "Help"
+}
+
 class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let blackBackground = UIView()
@@ -21,14 +30,23 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
     
     let cellID = "cellId"
     
+//    let settings: [Setting] = [
+//        Setting(imageName: "settings", labelName: "Settings"),
+//        Setting(imageName: "privacy", labelName: "Terms & Privacy Policy"),
+//        Setting(imageName: "feedback", labelName: "Send Feedback"),
+//        Setting(imageName: "help", labelName: "Help"),
+//        Setting(imageName: "switch_account", labelName: "Switch Account"),
+//        Setting(imageName: "cancel", labelName: "Cancel")
+//    ]
+    
     let settings: [Setting] = [
-        Setting(imageName: "settings", labelName: "Settings"),
-        Setting(imageName: "privacy", labelName: "Terms & Privacy Policy"),
-        Setting(imageName: "feedback", labelName: "Send Feedback"),
-        Setting(imageName: "help", labelName: "Help"),
-        Setting(imageName: "switch_account", labelName: "Switch Account"),
-        Setting(imageName: "cancel", labelName: "Cancel")
-    ]
+        Setting(imageName: "settings", labelName: .Settings),
+        Setting(imageName: "privacy", labelName: .Privacy),
+        Setting(imageName: "feedback", labelName: .Feedback),
+        Setting(imageName: "switch_account", labelName: .SwitchAccount),
+        Setting(imageName: "help", labelName: .Help),
+        Setting(imageName: "cancel", labelName: .Cancel)
+        ]
     
     var homeController: HomeController?
     
@@ -65,7 +83,7 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
             self.collectionView.frame = CGRect(x: 0, y: self.collectionView.frame.height, width: self.collectionView.frame.width, height: self.collectionView.frame.height)
         }, completion: {
             (completed: Bool) in
-            if setting.labelName != "" && setting.labelName != "Cancel" {
+            if setting.labelName != .Cancel {
                 self.homeController?.showControllerForSetting(setting: setting)
             }
         })
@@ -80,6 +98,8 @@ class SettingsLauncher: NSObject, UICollectionViewDataSource, UICollectionViewDe
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! SettingCell
         
         let setting = settings[indexPath.item]
+
+        
         cell.setting = setting
 
         

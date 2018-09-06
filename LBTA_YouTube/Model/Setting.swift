@@ -10,9 +10,9 @@ import UIKit
 
 class Setting: NSObject {
     let imageName: String
-    let labelName: String
+    let labelName: SettingName
     
-    init(imageName: String, labelName: String) {
+    init(imageName: String, labelName: SettingName) {
         self.imageName = imageName
         self.labelName = labelName
     }
