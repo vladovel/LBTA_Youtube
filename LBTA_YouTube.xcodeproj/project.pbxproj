@@ -20,6 +20,7 @@
 		3FBB2545213857C700529DE0 /* SetttingAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB2544213857C700529DE0 /* SetttingAlert.swift */; };
 		3FBC713A2126EFA4007C9CFF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC71392126EFA4007C9CFF /* VideoCell.swift */; };
 		3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC713C2126EFFE007C9CFF /* HomeController.swift */; };
+		3FEC8B502142647C0035D2D8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B4F2142647C0035D2D8 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		3FBC71392126EFA4007C9CFF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		3FBC713C2126EFFE007C9CFF /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3FEC8B4D214123E70035D2D8 /* MyPlayground - test enum initial values.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground - test enum initial values.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3FEC8B4F2142647C0035D2D8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		3F6B906A212558860012DAC0 /* LBTA_YouTube */ = {
 			isa = PBXGroup;
 			children = (
+				3FEC8B4E2142644A0035D2D8 /* API Service */,
 				3F833F15212C89FB00E1C727 /* Model */,
 				3F3FE6DF2126EF1800E1FC28 /* View */,
 				3FBC713B2126EFDD007C9CFF /* Controller */,
@@ -120,6 +123,14 @@
 				3F4E55182137DCB800985D9C /* SettingsLauncher.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		3FEC8B4E2142644A0035D2D8 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				3FEC8B4F2142647C0035D2D8 /* ApiService.swift */,
+			);
+			path = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				3F3FE6DE2126EA4D00E1FC28 /* Extensions.swift in Sources */,
 				3F4E55192137DCB800985D9C /* SettingsLauncher.swift in Sources */,
 				3F6B906C212558860012DAC0 /* AppDelegate.swift in Sources */,
+				3FEC8B502142647C0035D2D8 /* ApiService.swift in Sources */,
 				3FBB2545213857C700529DE0 /* SetttingAlert.swift in Sources */,
 				3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */,
 				3F833F14212B3A5200E1C727 /* MenuBar.swift in Sources */,
