@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1A0A4A21469F2500484DFF /* SubscriptionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A0A4921469F2500484DFF /* SubscriptionsCell.swift */; };
 		3F3FE6DE2126EA4D00E1FC28 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3FE6DD2126EA4D00E1FC28 /* Extensions.swift */; };
 		3F4E55192137DCB800985D9C /* SettingsLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E55182137DCB800985D9C /* SettingsLauncher.swift */; };
 		3F4E551B2138069300985D9C /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4E551A2138069300985D9C /* SettingCell.swift */; };
@@ -22,9 +23,11 @@
 		3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC713C2126EFFE007C9CFF /* HomeController.swift */; };
 		3FEC8B502142647C0035D2D8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B4F2142647C0035D2D8 /* ApiService.swift */; };
 		3FEC8B5221465A690035D2D8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B5121465A690035D2D8 /* FeedCell.swift */; };
+		3FEC8B542146988C0035D2D8 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B532146988C0035D2D8 /* TrendingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1A0A4921469F2500484DFF /* SubscriptionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsCell.swift; sourceTree = "<group>"; };
 		3F3FE6DD2126EA4D00E1FC28 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3F4E55182137DCB800985D9C /* SettingsLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLauncher.swift; sourceTree = "<group>"; };
 		3F4E551A2138069300985D9C /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		3FEC8B4D214123E70035D2D8 /* MyPlayground - test enum initial values.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground - test enum initial values.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3FEC8B4F2142647C0035D2D8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		3FEC8B5121465A690035D2D8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3FEC8B532146988C0035D2D8 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				3F4E551A2138069300985D9C /* SettingCell.swift */,
 				3FBB2544213857C700529DE0 /* SetttingAlert.swift */,
 				3FEC8B5121465A690035D2D8 /* FeedCell.swift */,
+				3FEC8B532146988C0035D2D8 /* TrendingCell.swift */,
+				3F1A0A4921469F2500484DFF /* SubscriptionsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				3F833F17212C8A0F00E1C727 /* Video.swift in Sources */,
 				3F4E551B2138069300985D9C /* SettingCell.swift in Sources */,
 				3F3FE6DE2126EA4D00E1FC28 /* Extensions.swift in Sources */,
+				3F1A0A4A21469F2500484DFF /* SubscriptionsCell.swift in Sources */,
 				3F4E55192137DCB800985D9C /* SettingsLauncher.swift in Sources */,
 				3FEC8B5221465A690035D2D8 /* FeedCell.swift in Sources */,
 				3F6B906C212558860012DAC0 /* AppDelegate.swift in Sources */,
@@ -218,6 +225,7 @@
 				3FBB2545213857C700529DE0 /* SetttingAlert.swift in Sources */,
 				3FBC713D2126EFFE007C9CFF /* HomeController.swift in Sources */,
 				3F833F14212B3A5200E1C727 /* MenuBar.swift in Sources */,
+				3FEC8B542146988C0035D2D8 /* TrendingCell.swift in Sources */,
 				3F4E551D2138224A00985D9C /* Setting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

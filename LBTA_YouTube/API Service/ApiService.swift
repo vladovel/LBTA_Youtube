@@ -11,9 +11,14 @@ import UIKit
 class ApiService: NSObject {
     
     static let sharedInstance = ApiService()
+
+    let baseUrl = "https://s3-us-west-2.amazonaws.com/youtubeassets"
     
-    func fetchVideos(completion: @escaping ([Video]) -> Void) {
-        let url = URL(string: "https://s3-us-west-2.amazonaws.com/youtubeassets/home.json")
+    
+    func fetchFeedForUrlString(url: String, completion: @escaping ([Video]) -> Void) {
+        
+        let url = URL(string: url)
+        
         URLSession.shared.dataTask(with: url!) {
             (data, response, error) in
             if error != nil {
@@ -41,7 +46,7 @@ class ApiService: NSObject {
                     //print(video.thumbnailImageName)
                     //print(video.channel?.profileImageName)
                     
-                videos.append(video)
+                    videos.append(video)
                 }
                 
                 DispatchQueue.main.async {
@@ -55,6 +60,22 @@ class ApiService: NSObject {
             
             
             }.resume()
+        
+        
+    }
+
+    
+    func fetchSubscriptionsFeed(completion: @escaping ([Video]) -> Void) {
+        fetchFeedForUrlString(url: "\(baseUrl)/subscriptions.json", completion: completion)
     }
     
+    func fetchTrendingFeed(completion: @escaping ([Video]) -> Void) {
+        fetchFeedForUrlString(url: "\(baseUrl)/trending.json", completion: completion)
+    }
+
+    func fetchVideos(completion: @escaping ([Video]) -> Void) {
+        fetchFeedForUrlString(url: "\(baseUrl)/home.json", completion: completion)
+    }
+    
+
 }
