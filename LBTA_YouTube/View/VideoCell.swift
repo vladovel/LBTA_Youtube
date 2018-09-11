@@ -29,6 +29,9 @@ class VIdeoCell: BaseCell {
     
     var video: Video? {
         didSet {
+            
+//            print(video)
+            
             titleLabel.text = video?.title
             
             setupThumbnailImageView()
@@ -39,7 +42,7 @@ class VIdeoCell: BaseCell {
             numberFormatter.numberStyle = .decimal
             
             if let numberOfViews = video?.numberOfViews, let channelName = video?.channel?.channelName {
-                subtitleTextView.text = "\(channelName) * \(numberFormatter.string(from: numberOfViews)!) * 2 years"
+                subtitleTextView.text = "\(channelName) * \(numberFormatter.string(from: numberOfViews as NSNumber)!) * 2 years"
             }
             
             // measure title text
