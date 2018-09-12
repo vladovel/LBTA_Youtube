@@ -44,7 +44,7 @@ class CustomImageView: UIImageView {
         
         if let imageFromCache = imageCache.object(forKey: string as NSString) {
             self.image = imageFromCache
-            print("Using image from cache ...")
+//            print("Using image from cache ...")
             return
         }
         
@@ -63,7 +63,7 @@ class CustomImageView: UIImageView {
                     
                     if self.imageUrlString == string {
                         self.image = imageToCache
-                        print("Loading image ...")
+//                        print("Loading image ...")
                     }
                     
                     imageCache.setObject(imageToCache!, forKey: string as NSString)

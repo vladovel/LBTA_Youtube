@@ -24,6 +24,7 @@
 		3FEC8B502142647C0035D2D8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B4F2142647C0035D2D8 /* ApiService.swift */; };
 		3FEC8B5221465A690035D2D8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B5121465A690035D2D8 /* FeedCell.swift */; };
 		3FEC8B542146988C0035D2D8 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC8B532146988C0035D2D8 /* TrendingCell.swift */; };
+		3FFC97212148F6890004D9CC /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC97202148F6890004D9CC /* VideoLauncher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		3FEC8B4F2142647C0035D2D8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		3FEC8B5121465A690035D2D8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		3FEC8B532146988C0035D2D8 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
+		3FFC97202148F6890004D9CC /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3F3FE6DD2126EA4D00E1FC28 /* Extensions.swift */,
+				3FFC97202148F6890004D9CC /* VideoLauncher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				3F15FA272147B3F100CA477A /* SubscriptionsCell.swift in Sources */,
 				3F4E55192137DCB800985D9C /* SettingsLauncher.swift in Sources */,
 				3FEC8B5221465A690035D2D8 /* FeedCell.swift in Sources */,
+				3FFC97212148F6890004D9CC /* VideoLauncher.swift in Sources */,
 				3F6B906C212558860012DAC0 /* AppDelegate.swift in Sources */,
 				3FEC8B502142647C0035D2D8 /* ApiService.swift in Sources */,
 				3FBB2545213857C700529DE0 /* SetttingAlert.swift in Sources */,

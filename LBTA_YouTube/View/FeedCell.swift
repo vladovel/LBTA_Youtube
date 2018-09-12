@@ -30,7 +30,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
             self.collectionView.reloadData()
         }
     }
-
+    
     
     override func setupViews() {
         super.setupViews()
@@ -47,33 +47,39 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
         
         collectionView.register(VIdeoCell.self, forCellWithReuseIdentifier: cellId)
-
+        
     }
     
-        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return videos?.count ?? 0
-        }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return videos?.count ?? 0
+    }
     
-        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! VIdeoCell
+        //        let video = videos[indexPath.item]
+        //        cell.thumbnailImageView.image = UIImage(named: video.thumbnailImageName!)
+        //        cell.titleLabel.text = video.title
+        
+        cell.video = videos?[indexPath.item]
+        return cell
+    }
     
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! VIdeoCell
-            //        let video = videos[indexPath.item]
-            //        cell.thumbnailImageView.image = UIImage(named: video.thumbnailImageName!)
-            //        cell.titleLabel.text = video.title
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = (frame.width - 16 - 16) * 9 / 16
+        return CGSize(width: frame.width, height: height + 16 + 88)
+    }
     
-            cell.video = videos?[indexPath.item]
-            return cell
-        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let height = (frame.width - 16 - 16) * 9 / 16
-            return CGSize(width: frame.width, height: height + 16 + 88)
-        }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let videoLauncher = VideoLauncher()
+        videoLauncher.showVideoPlayer()
+        
+    }
     
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 0
-        }
-    
-
     
 }

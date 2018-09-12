@@ -44,7 +44,7 @@ class ApiService: NSObject {
     }
     
     func fetchVideos(completion: @escaping ([Video]) -> Void) {
-        fetchFeedForUrlString(url: "\(baseUrl)/home.json", completion: completion)
+        fetchFeedForUrlString(url: "\(baseUrl)/home_num_likes.json", completion: completion)
     }
     
     
